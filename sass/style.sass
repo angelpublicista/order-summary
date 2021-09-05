@@ -1,0 +1,91 @@
+body
+    background-color: #E0E8FF
+    // overflow: hidden
+    background-image: url('../images/pattern-background-desktop.svg')
+    background-size: 100%
+    min-height: 100vh
+    background-position: top
+    background-repeat: no-repeat
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Red Hat Display', sans-serif
+
+*
+    --text-color: #79849E
+    --title-color: #1C2E56
+    --link-color: #382AE1
+
+h1, h2, h3
+    color: var(--title-color)
+p, span, li
+    color: var(--text-color)
+    font-size: 16px
+
+.content
+    min-height: 100vh
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 3em
+    box-sizing: border-box
+.card-order-summary
+    background-color: white
+    width: 400px
+    overflow: hidden
+    border-radius: 15px
+    box-shadow: 0px 7px 20px -4px rgba(#1C2E56 , .2)
+    &__img
+        width: 100%
+    &__info
+        text-align: center
+        padding: 2.5em
+        box-sizing: border-box
+        &__title
+            margin-top: 0
+            font-weight: 900
+        &__desc
+            line-height: 1.5em
+            padding: 0 1em
+            margin: auto
+        &__plan
+            display: flex
+            align-items: center
+            justify-content: space-between
+            background: #F8F9FE
+            padding: 1em
+            border-radius: 15px
+            box-sizing: border-box
+            margin: 30px 0
+            &__type
+                display: flex
+                align-items: center
+                &__icon
+                    margin-right: 10px
+                &__desc
+                    text-align: left
+                &__name
+                    margin: 0
+                    margin-bottom: 5px
+                    font-size: 16px
+                    font-weight: 900
+            &__change
+                font-size: 13px
+                color: var(--link-color)
+                font-weight: 700
+        &__payment
+            &__proceed
+                background-color: var(--link-color)
+                color: white
+                box-shadow: 0px 7px 30px -4px rgba(#4a22b9 , .5)
+            &__cancel
+                color: var(--text-color)
+    &__btn
+        display: block
+        margin: 10px 0
+        padding: 1em 2em
+        font-weight: 600
+        text-decoration: none
+        border-radius: 15px
+                    

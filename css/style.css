@@ -1,0 +1,111 @@
+body {
+  background-color: #E0E8FF;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-size: 100%;
+  min-height: 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+* {
+  --text-color: #79849E;
+  --title-color: #1C2E56;
+  --link-color: #382AE1;
+}
+
+h1, h2, h3 {
+  color: var(--title-color);
+}
+
+p, span, li {
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.content {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+  box-sizing: border-box;
+}
+
+.card-order-summary {
+  background-color: white;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 7px 20px -4px rgba(28, 46, 86, 0.2);
+}
+.card-order-summary__img {
+  width: 100%;
+}
+.card-order-summary__info {
+  text-align: center;
+  padding: 2.5em;
+  box-sizing: border-box;
+}
+.card-order-summary__info__title {
+  margin-top: 0;
+  font-weight: 900;
+}
+.card-order-summary__info__desc {
+  line-height: 1.5em;
+  padding: 0 1em;
+  margin: auto;
+}
+.card-order-summary__info__plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F8F9FE;
+  padding: 1em;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin: 30px 0;
+}
+.card-order-summary__info__plan__type {
+  display: flex;
+  align-items: center;
+}
+.card-order-summary__info__plan__type__icon {
+  margin-right: 10px;
+}
+.card-order-summary__info__plan__type__desc {
+  text-align: left;
+}
+.card-order-summary__info__plan__type__name {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 900;
+}
+.card-order-summary__info__plan__change {
+  font-size: 13px;
+  color: var(--link-color);
+  font-weight: 700;
+}
+.card-order-summary__info__payment__proceed {
+  background-color: var(--link-color);
+  color: white;
+  box-shadow: 0px 7px 30px -4px rgba(74, 34, 185, 0.5);
+}
+.card-order-summary__info__payment__cancel {
+  color: var(--text-color);
+}
+.card-order-summary__btn {
+  display: block;
+  margin: 10px 0;
+  padding: 1em 2em;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
