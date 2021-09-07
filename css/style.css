@@ -91,14 +91,25 @@ p, span, li {
   color: var(--link-color);
   font-weight: 700;
 }
+.card-order-summary__info__plan__change:hover {
+  color: #3a1b92;
+}
 .card-order-summary__info__payment__proceed {
   background-color: var(--link-color);
   color: white;
+  box-shadow: 0px 7px 10px -4px rgba(74, 34, 185, 0.5);
+}
+.card-order-summary__info__payment__proceed:hover {
+  background-color: #3a1b92;
   box-shadow: 0px 7px 30px -4px rgba(74, 34, 185, 0.5);
+  transform: translateY(-3px);
 }
 .card-order-summary__info__payment__cancel {
   color: var(--text-color);
   margin-bottom: 0 !important;
+}
+.card-order-summary__info__payment__cancel:hover {
+  color: #353535;
 }
 .card-order-summary__btn {
   display: block;
@@ -107,6 +118,17 @@ p, span, li {
   font-weight: 600;
   text-decoration: none;
   border-radius: 15px;
+  transition: all 0.4s;
+}
+
+.attribution {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 13px;
+  margin-bottom: 2em;
+}
+.attribution a {
+  color: #353535;
 }
 
 @media (max-width: 376px) {

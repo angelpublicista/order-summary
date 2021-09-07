@@ -1,6 +1,5 @@
 body
     background-color: #E0E8FF
-    // overflow: hidden
     background-image: url('../images/pattern-background-desktop.svg')
     background-size: 100%
     min-height: 100vh
@@ -74,14 +73,22 @@ p, span, li
                 font-size: 13px
                 color: var(--link-color)
                 font-weight: 700
+                &:hover
+                    color: darken(#4a22b9, 9)
         &__payment
             &__proceed
                 background-color: var(--link-color)
                 color: white
-                box-shadow: 0px 7px 30px -4px rgba(#4a22b9 , .5)
+                box-shadow: 0px 7px 10px -4px rgba(#4a22b9 , .5)
+                &:hover
+                    background-color: darken(#4a22b9, 9)
+                    box-shadow: 0px 7px 30px -4px rgba(#4a22b9 , .5)
+                    transform: translateY(-3px)
             &__cancel
                 color: var(--text-color)
                 margin-bottom: 0 !important
+                &:hover
+                    color: #353535
     &__btn
         display: block
         margin: 10px 0
@@ -89,6 +96,15 @@ p, span, li
         font-weight: 600
         text-decoration: none
         border-radius: 15px
+        transition: all .4s
+
+.attribution
+    text-align: center
+    color: var(--text-color)
+    font-size: 13px
+    margin-bottom: 2em
+    a
+        color: #353535
                     
 @media (max-width: 376px)
     .content
